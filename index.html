@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Production Data</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.3/xlsx.full.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>SOAP WASH</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <form id="machineForm">
+                <label for="machineNumber">Machine Name:</label>
+                <input type="text" id="machineNumber" name="machineNumber" required>
+                <button type="button" id="submitButton">Submit</button>
+            </form>
+        </div>
+        
+        <div id="displayArea" style="display: none;">
+            <table>
+                <tr>
+                    <th>Serial Number</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Machine Name</th>
+                </tr>
+            </table>
+        </div>
+
+        <button type="button" id="downloadButton">Download Excel</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
